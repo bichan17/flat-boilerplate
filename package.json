@@ -1,0 +1,25 @@
+{
+  "name": "flat-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run localhost & npm run watch:styles",
+    "build": "npm run build:styles",
+    "localhost": "npx http-server",
+    "watch:styles": "node-sass --include-path=node_modules/ --watch assets/styles/main.scss tmp/main.css & postcss tmp/main.css --use autoprefixer cssnano -o assets/styles/main.css --no-map --watch",
+    "build:styles": "node-sass --include-path=node_modules/ assets/styles/main.scss tmp/main.css & postcss tmp/main.css --use autoprefixer cssnano -o assets/styles/main.css --no-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0"
+  }
+}
