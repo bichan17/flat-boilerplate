@@ -1,0 +1,16 @@
+// :root {
+// }
+
+html {
+  background: $primary-background-color;
+  color: $primary-color;
+  font-family: $primary-font-family;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  &.noscroll{
+    overflow: hidden;
+  }
+}

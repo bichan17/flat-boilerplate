@@ -1,0 +1,127 @@
+$font-family-FaktPro: "FaktPro", Helvetica, Arial, sans-serif;
+$primary-font-family: $font-family-FaktPro;
+
+
+%heading {
+    font-size: get-vw(32px)*1.1;
+    line-height: 1.2;
+
+    @include breakpoint(small) {
+        font-size: get-vw-tablet(40px);
+        line-height: 1.2;
+    }
+    @include breakpoint(medium) {
+        font-size: get-vw-desktop(40px);
+        line-height: 1.2;
+    }
+}
+
+%menu-heading {
+    font-size: get-vw(20px)*1.1;
+    line-height: 1.2;
+
+    @include breakpoint(small) {
+        font-size: get-vw-tablet(40px);
+    }
+    @include breakpoint(medium) {
+        font-size: get-vw-desktop(40px);
+    }
+    // @include breakpoint(large) {
+    //     font-size: 40px;
+    //     line-height: 1.2;
+    // }
+}
+
+%subheading {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: get-vw(17px)*1.1;
+    line-height: get-vw(20px)*1.1;
+    @include breakpoint(small) {
+        font-size: get-vw-tablet(17px);
+        line-height: get-vw-tablet(20px);
+    }
+    @include breakpoint(medium) {
+        font-size: get-vw-desktop(17px);
+        line-height: get-vw-desktop(20px);
+    }
+}
+
+%eyebrow {
+    font-weight: normal;
+    font-size: get-vw(20px)*1.1;
+    line-height: 1.1;
+    letter-spacing: get-vw(0.5px)*1.1;
+    @include breakpoint(small) {
+        font-size: get-vw-tablet(20px);
+        letter-spacing: get-vw-tablet(0.5px);
+    }
+    @include breakpoint(medium) {
+        font-size: get-vw-desktop(20px);
+        letter-spacing: get-vw-desktop(0.5px);
+    }
+}
+
+%body {
+    font-weight: normal;
+    font-size: get-vw(18px)*1.1;
+    line-height: 1.28;
+    @include breakpoint(small) {
+        font-size: get-vw-tablet(20px);
+        line-height: 1.3;
+    }
+    @include breakpoint(medium) {
+        font-size: get-vw-desktop(20px);
+        line-height: 1.3;
+    }
+}
+
+%player-text {
+    font-weight: normal;
+    font-size: get-vw(20px)*1.1;
+    line-height: 1.2;
+    @include breakpoint(small) {
+        font-size: get-vw-tablet(16px);
+        line-height: 1.56;
+        letter-spacing: get-vw-tablet(0.3px);
+    }
+    @include breakpoint(medium) {
+        font-size: get-vw-desktop(16px);
+        line-height: 1.56;
+        letter-spacing: get-vw-desktop(0.3px);
+    }
+}
+
+%menu-body {
+    font-weight: normal;
+    font-size: get-vw(16px)*1.1;
+    line-height: 1.13;
+    @include breakpoint(small) {
+        font-size: get-vw-tablet(20px);
+        line-height: 1.3;
+    }
+    @include breakpoint(medium) {
+        font-size: get-vw-desktop(20px);
+        line-height: 1.3;
+    }
+    // @include breakpoint(large) {
+    //     font-size: 20px;
+    //     line-height: 1.3;
+    // }
+}
+
+%caption {
+    font-size:get-vw(12px)*1.1;
+    line-height: 1.33;
+    letter-spacing: get-vw(0.2px)*1.1;
+    color:$color-military-green;
+    @include breakpoint(small) {
+        font-size: get-vw-tablet(12px);
+        letter-spacing: get-vw-tablet(0.2px);
+    }
+    @include breakpoint(medium) {
+        font-size: get-vw-desktop(12px);
+        letter-spacing: get-vw-desktop(0.2px);
+    }
+}
+  
